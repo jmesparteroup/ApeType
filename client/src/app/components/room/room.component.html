@@ -1,0 +1,47 @@
+<!-- <div class="id">ROOM ID: {{ roomId }}</div> -->
+<div *ngIf="!gameStart" class="lobby">
+  <app-room-players-display [game]="game" [userId]="userId"></app-room-players-display>
+  <div class="buttons-container d-flex w-50 mx-auto">
+    <button class="submit-button" (click)="ready()">Ready</button>
+    <button
+      *ngIf="game?.creatorId === userId && !game?.creatorReady"
+      class="submit-button"
+      data-bs-toggle="modal" data-bs-target="#exampleModal"
+    >
+      Options
+    </button>
+  </div>
+</div>
+<app-testarea class="testarea" *ngIf="gameStart" [activeLevel]="game.testLevel" [activeType]="game.testType" [setPlayers]="game.players" [rankings]="game.rankings" [gameId]="game.id" [multiplayer]="true" [testcase]="game.testcase" (goToLobby)="showLobby()" ></app-testarea>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title" id="exampleModalLabel">Test Options</div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body test-options mx-auto">
+            <div class="test-types d-flex">
+                <div
+                  class="option ms-1 {{ activeType === type ? 'active' : '' }}"
+                  *ngFor="let type of testTypes"
+                  (click)="onClickType(type)"
+                >
+                  {{ type }}
+                </div>
+              </div>
+              <div class="test-params d-flex">
+                <div
+                  class="option ms-1 {{ id === activeParam ? 'active' : '' }}"
+                  *ngFor="let level of testParam[activeType]; let id = index"
+                  (click)="onClickParam(id)"
+                >
+                  {{ level }}
+                </div>
+              </div>
+        </div>
+
+      </div>
+    </div>
+  </div>

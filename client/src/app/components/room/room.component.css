@@ -1,0 +1,67 @@
+.buttons-container {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between !important;
+}
+
+.submit-button {
+  width: 49%;
+}
+
+.submit-button:active {
+  color: var(--sub-alt-color  );
+}
+.submit-button:hover {
+  transform: translate(0, -0.1rem);
+  color: var(--light-text-color);
+}
+
+/* .modal {
+  background-color: var(--main-bg-color)!important;
+} */
+
+
+
+.modal-dialog {
+  border-radius: 5%;
+  background-color: var(--main-bg-color)!important;
+}
+
+.modal-content {
+  
+  background-color: var(--main-bg-color)!important;
+  text-align: center;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-title {
+  color : var(--light-text-color);
+
+}
+
+.test-options {
+  cursor: pointer;
+  color: var(--dimmed-text-color);
+  transition: all 0.125s ease 0s;
+  opacity: 1;
+  font: var(--font)!important;
+}
+
+.option {
+  font: var(--font);
+}
+
+.option:hover {
+  color: var(--main-text-color);
+  transform: scale(1.1);
+  transition: transform 330ms ease-in-out;
+  z-index: 3;
+}
+
+.active {
+  color: var(--main-text-color);
+}

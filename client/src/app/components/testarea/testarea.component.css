@@ -1,0 +1,210 @@
+* {
+  background-color: var(--main-bg-color);
+}
+
+.test-area {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 6rem;
+}
+
+.blur {
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+  opacity: 0.25;
+}
+
+.test-area-header {
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.test-area-title {
+  color: var(--dimmed-text-color);
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  width: fit-content;
+}
+
+.test-area-container {
+  height: 47vh;
+  padding: 0;
+  margin: 0;
+  max-width: 700px !important;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.input-text {
+  border: none;
+  cursor: default;
+  display: block;
+  margin: 0;
+  opacity: 0;
+  outline: none;
+  padding: 0;
+  pointer-events: none;
+  position: fixed;
+  resize: none;
+  z-index: -1;
+}
+
+.focus-text {
+  position: relative;
+  top: -70px;
+  color: var(--light-text-color);
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.hidden {
+  display: none;
+}
+
+.input-text:focus {
+  background-color: var(--main-bg-color);
+}
+
+.ng-fa-icon {
+  font-size: 2rem;
+  color: var(--dimmed-text-color);
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px!important;
+  border-radius: 5%; */
+}
+
+.ng-fa-icon:hover {
+  color: var(--main-text-color);
+}
+
+.hidden-pad {
+  height: 20vh;
+}
+
+.time-left {
+  color: var(--dimmed-text-color);
+  font-size: 1.5rem;
+}
+
+.need-login {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+.need-login-text {
+  font-size: 1.2rem;
+  color: var(--dimmed-text-color);
+  margin-top: 1rem;
+}
+
+.need-login-button {
+  font-size: 1.4rem;
+  color: var(--dimmed-text-color) !important;
+  border-radius: 5%;
+  padding: 1rem;
+  width: 3rem;
+  text-decoration: none !important;
+}
+
+.need-login-button:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.rankings {
+  box-shadow: var(--tile-shadow);
+  border-radius: 5%;
+}
+
+.title-timer {
+  height: 20vh;
+}
+
+.ape-race-container {
+  width: 75%;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .apes {
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+} */
+
+.ape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.ape-name {
+  font-weight: 400;
+  color: var(--light-text-color);
+  background: transparent;
+}
+
+.progress-bar {
+  background-color: var(--dimmed-text-color)!important;
+  width: 80%;
+  height: 5px;
+  border-radius: 3px;
+  overflow: visible;
+  margin-left: 0.3rem;
+}
+
+.progress-bar div {
+  height: 5px;
+  border-radius: 2px;
+  width: 50%;
+  background-color: var(--main-text-color);
+  overflow: visible;
+}
+
+.progress-bar div .ape-span {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  /* background-color: #FFF; */
+  float: right;
+  margin-top: -15px;
+  margin-right: -20px;
+  color : var(--dimmed-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.progress-bar div .wpm-span {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  float: right;
+  margin-top: -30px;
+  margin-right: -40 px;
+  color : var(--dimmed-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}

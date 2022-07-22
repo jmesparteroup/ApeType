@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    padding-bottom: 5px;
+    color: var(--light-text-color);
+    border-bottom: 2px solid #26272a53;
+}
+
+.icon-button {
+    margin: 0 0.3rem !important;
+    color: var(--dimmed-text-color);
+    font-size: 1.5rem;
+}
+
+.icon-button:hover{
+    cursor: pointer;
+    color: var(--light-text-color);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.words {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

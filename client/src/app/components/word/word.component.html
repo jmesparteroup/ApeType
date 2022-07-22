@@ -1,0 +1,3 @@
+<div *ngIf="word" class="word {{state}}" >
+        <app-letter *ngFor="let letter of word.split(''); let id = index" [letter]="letter" [letterData]="letterStates[id]"> </app-letter>
+</div>

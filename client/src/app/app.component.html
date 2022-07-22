@@ -1,0 +1,12 @@
+<div class="app">
+  <div class="container lg-w-50">
+    <p *ngIf="bannerMessage != ''" class="banner marquee">
+      <span
+        >{{bannerMessage}}-&nbsp;</span
+      >
+    </p>
+    <!-- <p class="banner marquee2"><span>This is text - This is text - This is text - This is text - This is text - This is text - This is text - This is text - This is text - This is text - This is text - This is text -&nbsp;</span></p> -->
+    <app-navbar></app-navbar>
+    <router-outlet></router-outlet>
+  </div>
+</div>

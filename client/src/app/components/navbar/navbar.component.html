@@ -1,0 +1,41 @@
+<div class="navbar container-fluid">
+  <div class="container apetype-nav">
+    <a class="d-flex" href="#">
+      <img *ngIf="router.url !== '/leaderboard'" src="/assets/img/logo.png" alt="" width="80" class="" />
+      <img *ngIf="router.url === '/leaderboard'" src="/assets/img/leaderboard-logo.png" alt="" width="80" class="" />
+      <div class="logo-name">
+        <div class="logo-top">ape see.</div>
+        <div class="logo-bottom">apetype.</div>
+      </div>
+    </a>
+    <div class="d-flex">
+      <a routerLink="" class="nav-clickable mx-2"> <fa-icon [icon]="homeIcon"></fa-icon> </a>
+      <a routerLink="/leaderboard" class="nav-clickable mx-2"><fa-icon [icon]="leaderboardIcon"></fa-icon></a>
+      <a *ngIf="!isLoggedin" routerLink="users" class="nav-clickable mx-2"><fa-icon [icon]="userIcon"></fa-icon></a>
+      <a *ngIf="isLoggedin" routerLink="battles" class="nav-clickable mx-2"><fa-icon [icon]="battleIcon"></fa-icon></a>
+      <a *ngIf="isLoggedin && login?.role === 'admin'" routerLink="admin" class="nav-clickable mx-2"> admin </a>
+      <a *ngIf="isLoggedin" class="nav-clickable mx-2" (click)="logout()"> logout </a>
+    </div>
+
+    <div *ngIf="router.url === '/'" class="test-options ms-auto">
+      <div class="test-types d-flex">
+        <div
+          class="option ms-1 {{ activeType === type ? 'active' : '' }}"
+          *ngFor="let type of testTypes"
+          (click)="onClickType(type)"
+        >
+          {{ type }}
+        </div>
+      </div>
+      <div class="test-params d-flex">
+        <div
+          class="option ms-1 {{ id === activeParam ? 'active' : '' }}"
+          *ngFor="let level of testParam[activeType]; let id = index"
+          (click)="onClickParam(id)"
+        >
+          {{ level }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

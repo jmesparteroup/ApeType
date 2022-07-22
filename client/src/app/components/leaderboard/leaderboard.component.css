@@ -1,0 +1,59 @@
+  .leaderboard-container {
+    box-shadow: var(--tile-shadow);
+    height: 70vh;
+    border-radius: 5%;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    max-width: 1000px;
+}
+
+.tile {
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard-header {
+  height: 10%;
+  color: var(--light-text-color);
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+}
+
+.header-text {
+  display: flex;
+  justify-content: start;
+  width: 95%;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #26272a53;
+}
+
+.rankings {
+  height: 80%;
+  width: 95%;
+  overflow-y: auto;
+}
+
+.ranking-tile {
+  height: 100%;
+}
+
+.row {
+  padding: 0 0 !important;
+}
+.even {
+  background-color: rgb(128, 128, 128);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.back {
+  justify-self: left;
+}
+
+.next {
+  justify-self: right;
+}

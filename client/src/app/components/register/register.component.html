@@ -1,0 +1,60 @@
+<!-- Default form register -->
+<form
+  class="text-center form-group"
+  [formGroup]="registerForm"
+  (ngSubmit)="addUser()"
+>
+  <p class="h4 mb-4">register</p>
+
+  <!-- First name -->
+  <input
+    type="text"
+    id="defaultRegisterFormFirstName"
+    class="form-control mb-2"
+    placeholder="first name"
+    formControlName="firstName"
+  />
+
+  <!-- Last name -->
+  <input
+    type="text"
+    id="defaultRegisterFormLastName"
+    class="form-control mb-2"
+    placeholder="last name"
+    formControlName="lastName"
+  />
+
+  <!-- E-mail -->
+  <input
+    type="email"
+    id="defaultRegisterFormEmail"
+    class="form-control mb-2"
+    placeholder="e-mail"
+    formControlName="email"
+  />
+  <!-- Password -->
+  <input
+    type="password"
+    id="defaultRegisterFormPassword"
+    class="form-control mb-2"
+    placeholder="password"
+    aria-describedby="defaultRegisterFormPasswordHelpBlock"
+    formControlName="password"
+  />
+  <!-- Confirm Password -->
+  <input
+    type="password"
+    id="defaultRegisterFormConfirmPassword"
+    class="form-control"
+    placeholder="confirm password"
+    aria-describedby="defaultRegisterFormPasswordHelpBlock"
+    formControlName="confirmPassword"
+  />
+
+  <!-- Sign up button -->
+  <button class="submit-button" type="submit">
+    <fa-icon [icon]="joinIcon" class="submit-icon"></fa-icon>
+    sign up
+  </button>
+</form>
+<!-- Default form register -->

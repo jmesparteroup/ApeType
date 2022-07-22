@@ -1,0 +1,46 @@
+.page {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.rooms-container {
+  box-shadow: var(--tile-shadow);
+  border-radius: 5px;
+  height: 25vh;
+  width: 50%;
+}
+
+.join-container {
+  color: var(--light-text-color);
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+  align-items: center;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle {
+  color: var(--dimmed-text-color);
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.submit-button {
+  color: var(--light-text-color);
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--light-text-color);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+  height: fit-content;
+  width: fit-content;
+}

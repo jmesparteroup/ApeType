@@ -1,0 +1,97 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Change the white to any color */
+
+:root {
+  --main-bg-color: #323437;
+  --main-text-color: #9ec7ac;
+  --main-text-color-darker: #8fe3ab;
+  --light-text-color: #d1d0c5;
+  --dimmed-text-color: #676661;
+  --sub-alt-color: #2c2e31;
+  --font: "Roboto Mono", "Roboto Mono", "Vazirmatn";
+  --tile-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px!important;
+  
+}
+
+* {
+  transition: all 0.1s ease-in-out;
+}
+
+
+*::-webkit-scrollbar {
+  height: 3px;
+  width: 3px;
+  background: transparent;
+}
+
+*::-webkit-scrollbar-track {
+  width: 3px;
+  background: var(--dimmed-text-color);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #26272a;
+  border-radius: 1px;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px var(--sub-alt-color) inset !important;
+    -webkit-text-fill-color: var(--main-text-color) !important;
+}
+
+.icon {
+  font-size: 2rem;
+  color: var(--dimmed-text-color);
+}
+
+.icon:hover {
+  color: var(--main-text-color);
+}
+
+.form-control {
+  background-color: var(--sub-alt-color)!important;
+  border: none!important;
+  outline: none!important;
+  color: var(--main-text-color)!important;
+}
+
+.form-group {
+  color: var(--dimmed-text-color)!important;
+  margin-bottom: 1.5rem!important;
+  padding: 1rem!important;
+  padding-bottom: 3rem!important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px!important;
+}
+
+.submit-button {
+  display:flex;
+  background-color: var(--sub-alt-color);
+  border: none;
+  border-radius: 5px;
+  padding: 0.2rem 1rem;
+  width: 100%;
+  color: var(--dimmed-text-color);
+  margin-top: 1rem;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.submit-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+::placeholder {
+  color: var(--dimmed-text-color)!important;
+}
+
+

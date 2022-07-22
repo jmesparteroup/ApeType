@@ -1,0 +1,36 @@
+<!-- Default form register -->
+<form
+  class="text-center form-group"
+  [formGroup]="loginForm"
+  (ngSubmit)="login()"
+>
+  <p class="h4 mb-4">login</p>
+
+
+
+  <!-- E-mail -->
+  <input
+    type="email"
+    id="loginFormEmail"
+    class="form-control mb-2"
+    placeholder="e-mail"
+    formControlName="email"
+  />
+  <!-- Password -->
+  <input
+    type="password"
+    id="loginFormPassword"
+    class="form-control mb-2"
+    placeholder="password"
+    aria-describedby="loginFormPasswordHelpBlock"
+    formControlName="password"
+  />
+
+  <!-- Sign up button -->
+  <button class="submit-button m" type="submit">
+    <fa-icon [icon]="loginIcon"  class="submit-icon"></fa-icon>
+    sign in
+    
+  </button>
+</form>
+<!-- Default form register -->

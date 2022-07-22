@@ -1,0 +1,43 @@
+<div class="page d-flex flex-column centered">
+  <div class="title mx-auto">Ape Battle Rooms</div>
+  <div class="rooms-container mx-auto row mt-1">
+    <!-- create room or join room -->
+    <div class="container join-container centered col-xs-12 col-md-5">
+      Join Battle
+      <div class="input-group mx-auto mt-1">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="room id"
+          aria-label="room id"
+          aria-describedby="basic-addon2"
+          [(ngModel)]="roomId"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            (click)="joinRoom()"
+          >
+            join
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="middle mx-auto centered col-xs-12 col-md-1">- or -</div>
+    <!-- create room -->
+    <div class="container centered text-center col-xs-12 col-md-5">
+      <div class="input-group centered w-75 mx-auto">
+        <div class="input-group-append centered">
+          <button
+            class="submit-button p-3 mt-0 mb-1 mt-md-1 mb-md-0"
+            type="button"
+            (click)="createRoom()"
+          >
+            Create Room
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

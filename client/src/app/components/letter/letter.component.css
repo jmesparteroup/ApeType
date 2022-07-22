@@ -1,0 +1,19 @@
+.letter {
+    margin-left: 0.05rem;
+    margin-right: 0.05rem;
+    font-size: 1.5rem;
+    color: var(--dimmed-text-color);
+}
+
+.waiting {
+    color: var(--dimmed-text-color)
+}
+
+.correct {
+    color: var(--main-text-color)
+}
+
+.incorrect {
+    color: #976262;
+}
+

@@ -1,0 +1,28 @@
+<div class="input-container d-flex my-1">
+  <input
+    #wordInput
+    [(ngModel)]="showOnInputWord"
+    type="text"
+    id="display-word"
+    class="form-control"
+    placeholder="{{ word.word}}"
+    disabled
+  />
+  <fa-icon
+    class="icon-button"
+    [icon]="editIcon"
+    (click)="onClickEdit($event)"
+  ></fa-icon>
+  <fa-icon
+    *ngIf="showEdit"
+    class="icon-button"
+    [icon]="checkMarkIcon"
+    (click)="onClickSave($event)"
+  ></fa-icon>
+  <fa-icon
+    *ngIf="showEdit"
+    class="icon-button"
+    [icon]="trashIcon"
+    (click)="onClickDelete($event)"
+  ></fa-icon>
+</div>

@@ -1,0 +1,20 @@
+<div class="results container row mx-auto py-3">
+  <div class="col-md-3 my-auto align-items-center flex-wrap justify-content-center">
+    <div class="metric d-flex flex-wrap justify-content-center">
+      WPM: <span class="metric-value">{{ wpm }}</span>
+    </div>
+    <div class="metric d-flex flex-wrap justify-content-center">
+      Acc: <span class="metric-value">{{ accuracy }}%</span>
+    </div>
+  </div>
+  <div class="col-md-9">
+    <div class="chart-container">
+      <canvas
+        id="chart"
+      >
+      </canvas>
+    </div>
+  </div>
+
+  <!-- <div class="metric"> Time: <span class="metric-value" >{{time}}</span> </div>   -->
+</div>

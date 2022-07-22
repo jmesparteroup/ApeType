@@ -1,0 +1,69 @@
+.apetype-nav {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color) !important;
+  text-decoration: none !important;
+  font: var(--font);
+  justify-content: flex-start;
+  margin-top: 2rem;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  text-align: center;
+}
+
+.logo-bottom {
+  position: relative;
+  top: -10px;
+  vertical-align: top;
+  font-size: 3rem;
+  color: var(--main-text-color);
+}
+
+.logo-top {
+  position: relative;
+  bottom: -20px;
+  left: 3px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 1rem;
+  vertical-align: bottom;
+  color: var(--dimmed-text-color);
+}
+
+.nav-clickable {
+  cursor: pointer;
+  color: var(--dimmed-text-color);
+}
+.nav-clickable :hover {
+  cursor: pointer;
+  color: var(--main-text-color);
+}
+
+.test-options {
+  cursor: pointer;
+  color: var(--dimmed-text-color);
+  transition: all 0.125s ease 0s;
+  opacity: 1;
+  font: var(--font)!important;
+}
+
+.option {
+  font: var(--font);
+}
+
+.option:hover {
+  color: var(--main-text-color);
+  transform: scale(1.1);
+  transition: transform 330ms ease-in-out;
+  z-index: 3;
+}
+
+.active {
+  color: var(--main-text-color);
+}
