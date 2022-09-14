@@ -10,7 +10,6 @@ import { Player } from 'src/app/models/game';
 export class RoomRankingsComponent implements OnInit {
   @Input() set setRankingData(val: Player[]) {
     // sort by wpm and accuracy
-    // new comment
 
     this.rankingData = val.sort((a, b) => {
       if (a.wpm > b.wpm) {
